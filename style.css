@@ -18,22 +18,34 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: -5px;
+    background-attachment: fixed;
     font-family: 'Daydream';
 }
 
 .mini-mono:hover{
     filter: drop-shadow(0px 0px 20px var(--boo));
+    transform: scale(1.1);
+    transition: transform 0.3s;
+    transition: filter 0.3s;
 }
 
 .container {
     display: grid;
     grid-template-rows: 33%;
+    height: 100vh;
+    font-size: 25px;
 }
 
 .principal {
-   
+    margin: 2em 0;
     justify-content: center;
     align-items: center;
+}
+
+.container__video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header {
@@ -51,11 +63,56 @@ header {
 .tabela-principal, caption {
     text-align: center;
     color: #fff;
-    background-color: #000;
+    text-shadow: 0px 0px 10px black;
+    background-image: url(luz.gif);
+    background-size: cover;
+    background-position: bottom;
     outline: 8px double #fff;
-    filter: drop-shadow(0px 0px 5px var(--boo))
+    margin: 0.5em 0;
 }
 
 tr:hover {
     color: powderblue ;
+}
+
+.container__imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__imagem img {
+    height: 20vh;
+
+}
+
+.jevil {
+    filter: drop-shadow(0px 0px 10px rgb(102, 40, 160));
+}
+
+.knight {
+    filter: drop-shadow(0px 0px 10px #fff)
+}
+
+.container__tabela {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delta:hover {
+    filter: drop-shadow(0 0 10px rgb(255, 95, 156));
+    transition: filter 0.3s;
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+.mono {
+    color:#fff;
+    text-shadow: 0 0 10px black;
+}
+
+span {
+    color: #000;
+    text-shadow: 0 0 10px #fff;
 }
